@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial , serif;
+    font-size: 14px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 7rem;   /* Footer spacing, must be equal as in #footer */
+}
+
+/*INTRO SECTION*/
+
+#intro-wrap {
+    background-image: url(introbg.png);
+    background-size: 100% 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+#intro-profileimg {
+    height: 150px;
+    border-radius: 75px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px white;
+}
+
+#intro-wrap h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#intro-wrap p {
+    font-size: 22px;
+    margin-top: 0px;
+    font-family: monospace;
+}
+
+#intro-wrap ul {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#intro-wrap ul li {
+    display: inline;
+    padding: 10px;
+}
+
+#intro-wrap ul li img {
+    height: 35px;
+    transition: transform 0.2s;
+    background-color: #822a54;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+#intro-wrap ul li img:hover {
+    transform: scale(1.1);
+}
+
+/*HEADER SECTION*/
+
+#header {
+    background-color: #382636;
+    box-shadow: 0px 0px 50px grey;
+    padding: 10px;
+}
+
+#header img {
+    padding-left: 50px;
+    height: 40px;
+    margin: 0px;
+    float: left;
+    transition: transform 0.2s;
+}
+
+#header img:hover {
+    transform: scale(1.1);
+}
+
+#header ul {
+    text-align: center;
+}
+
+#header ul li {
+    color: white;
+    display: inline;
+    padding: 70px;
+    margin: 0px;
+    transition: color 0.2s;
+}
+
+#header ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+#header a:hover {
+    color: #b23772;
+}
+
+/*ABOUT ME SECTION*/
+
+#aboutme {
+    padding: 20px;
+}
+
+.section-header {
+    color: #3d3d3d;
+    text-align: center;
+}
+
+/*FOOTER SECTION*/
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7rem;   /* Footer spacing, must be equal as in #content-wrap */
+    background-color: #382636;
+    box-shadow: 0px 0px 15px grey;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+}
+
+#footer ul {
+     margin: 0px;
+    padding: 0px;
+}
+
+#footer ul li {
+    display: inline;
+    padding: 10px;
+}
+
+#footer ul li img {
+    height: 35px;
+    transition: transform 0.2s;
+    background-color: #2d1f2c;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+#footer ul li img:hover {
+    transform: scale(1.1);
+}
