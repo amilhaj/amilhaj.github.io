@@ -108,11 +108,6 @@ body {
     text-decoration: underline;
 }
 
-.content p {
-    text-indent: 50px;
-    font-size: 15px;
-}
-
 /*ABOUT ME*/
 
 #about-me img {
@@ -120,6 +115,11 @@ body {
     height: 97vh;
     margin: 0px 20px 0px 20px;
     border-radius: 20px;
+}
+
+#about-me p {
+    text-indent: 50px;
+    font-size: 15px;
 }
 
 /*FOOTER SECTION*/
