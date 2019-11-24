@@ -1,0 +1,152 @@
+/*GENERAL SECTION*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #59585A;
+    color: white;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+
+}
+
+/*INTRO SECTION*/
+
+#intro-wrap {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(introbg.png);
+    background-size: 100% 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+#intro-profileimg {
+    height: 200px;
+    margin: 50px 0 0 0;
+    border-radius: 100px;
+}
+
+#intro-wrap ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#intro-wrap ul li {
+    display: inline;
+}
+
+#intro-wrap ul li img {
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: black;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+#intro-wrap ul li img:hover {
+    transform: scale(1.1);
+}
+
+/*NAVBAR SECTION*/
+
+#navigation-bar ul {
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+#navigation-bar ul li {
+    display: inline;
+    margin: 0px 60px 0px 60px;
+}
+
+#navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+#navigation-bar ul li a:hover {
+    color: #EF75DF;
+}
+
+/*CONTENT SECTION*/
+
+.content {
+    padding: 10px;
+    height: 100vh;
+    color: white;
+}
+
+/*ABOUT ME SECTION*/
+
+#about-me {
+    background-color: #1d1f21;
+}
+
+/*SKILLS SECTION*/
+
+#skills {
+    background-color: #47484b;
+}
+
+/*PROJECTS SECTION*/
+
+#projects {
+    background-color: #1d1f21;
+}
+
+/*CONTACT SECTION*/
+
+#contact {
+    background-color: #47484b;
+}
+
+/*FOOTER SECTION*/
+
+footer {
+    background-color: #1d1f21;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+    margin: 0px;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li img {
+    padding: 10px;  
+    margin: 0px 10px 5px 10px;
+    border-radius: 10px;
+    height: 20px;
+    background-color: black;
+    transition: transform 0.2s;
+}
+
+footer ul li img:hover {
+    transform: scale(1.1);
+}
+
