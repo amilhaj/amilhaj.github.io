@@ -1,3 +1,5 @@
+/*GENERAL SECTION*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,8 +7,11 @@ html {
 body {
     padding: 0px;
     margin: 0px;
-    font-family: Arial , serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     font-size: 14px;
+    background-color: white;
+    color: black;
+    
 }
 
 #page-container {
@@ -14,146 +19,160 @@ body {
     min-height: 100vh;
 }
 
-#content-wrap {
-    padding-bottom: 7rem;   /* Footer spacing, must be equal as in #footer */
-}
-
 /*INTRO SECTION*/
 
 #intro-wrap {
-    background-image: url(introbg.png);
+    padding: 0px;
+    margin: 0px;
+    background-image: url(images/introbg.png);
     background-size: 100% 100%;
-    height: 100vh;
+    height: 92vh;
     text-align: center;
     color: white;
 }
 
-#intro-profileimg {
-    height: 150px;
-    border-radius: 75px;
-    margin-top: 100px;
-    box-shadow: 0px 0px 10px white;
-}
-
 #intro-wrap h1 {
-    font-size: 50px;
-    margin-bottom: 0px;
+    margin: 20px 20px 0px 20px;
 }
 
 #intro-wrap p {
-    font-size: 22px;
-    margin-top: 0px;
-    font-family: monospace;
+    margin: 0px 20px 20px 20px;
+    font-size: 20px;
+}
+
+#intro-profileimg {
+    height: 200px;
+    margin: 50px 0 0 0;
+    border-radius: 100px;
 }
 
 #intro-wrap ul {
-    margin: 0px;
     padding: 0px;
-    
+    margin: 0px;
 }
 
 #intro-wrap ul li {
     display: inline;
-    padding: 10px;
 }
 
 #intro-wrap ul li img {
-    height: 35px;
-    transition: transform 0.2s;
-    background-color: #822a54;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
     border-radius: 10px;
+    background-color: black;
+    height: 40px;
+    transition: transform 0.2s;
 }
 
 #intro-wrap ul li img:hover {
     transform: scale(1.1);
 }
 
-/*HEADER SECTION*/
+/*NAVBAR SECTION*/
 
-#header {
-    background-color: #382636;
-    box-shadow: 0px 0px 50px grey;
-    padding: 10px;
-}
-
-#header img {
-    padding-left: 50px;
-    height: 40px;
-    margin: 0px;
-    float: left;
-    transition: transform 0.2s;
-}
-
-#header img:hover {
-    transform: scale(1.1);
-}
-
-#header ul {
+#navigation-bar ul {
     text-align: center;
-}
-
-#header ul li {
-    color: white;
-    display: inline;
-    padding: 70px;
-    margin: 0px;
-    transition: color 0.2s;
-}
-
-#header ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.2s;
-}
-
-#header a:hover {
-    color: #b23772;
-}
-
-/*ABOUT ME SECTION*/
-
-#aboutme {
     padding: 20px;
+    margin: 0px;
+    background: #382636;
 }
 
-.section-header {
-    color: #3d3d3d;
+#navigation-bar ul li {
+    display: inline;
+    margin: 0px 60px 0px 60px;
+}
+
+#navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+#navigation-bar ul li a:hover {
+    color: #EF75DF;
+}
+
+/*CONTENT SECTION*/
+
+.content {
+    padding: 10px;
+    height: 100vh;
+}
+
+.content h1 {
+    border-bottom: 5px solid #382636;
     text-align: center;
+}
+
+.content h2 {
+    text-decoration: underline;
+}
+
+.content p {
+    text-indent: 50px;
+    font-size: 15px;
+}
+
+/*ABOUT ME*/
+
+#about-me img {
+    float: right;
+    height: 97vh;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
 }
 
 /*FOOTER SECTION*/
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 7rem;   /* Footer spacing, must be equal as in #content-wrap */
+footer {
     background-color: #382636;
-    box-shadow: 0px 0px 15px grey;
-    padding-top: 5px;
     text-align: center;
-    color: white;
 }
 
-#footer ul {
-     margin: 0px;
+footer p {
+    padding: 10px;
+    margin: 0px;
+}
+
+footer ul {
+    margin: 0px;
     padding: 0px;
 }
 
-#footer ul li {
+footer ul li {
     display: inline;
+}
+
+footer ul li img {
+    padding: 10px;  
+    margin: 0px 10px 5px 10px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: grey;
+    transition: transform 0.2s;
+}
+
+footer ul li img:hover {
+    transform: scale(1.1);
+}
+
+/*BACK TO TOP BUTTON*/
+
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    outline: none; /* Remove outline */
+    background-color: #644260; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
     padding: 10px;
 }
 
-#footer ul li img {
-    height: 35px;
-    transition: transform 0.2s;
-    background-color: #2d1f2c;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-}
-
-#footer ul li img:hover {
-    transform: scale(1.1);
+#myBtn img {
+    height: 40px;
+    padding: 0px;
 }
