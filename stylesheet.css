@@ -1,178 +1,149 @@
 /*GENERAL SECTION*/
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
+    color: white;
+    background: black;
     padding: 0px;
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    font-size: 14px;
-    background-color: white;
-    color: black;
-    
 }
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-/*INTRO SECTION*/
-
-#intro-wrap {
+.content-1 {
+    height: 100vh;
     padding: 0px;
-    margin: 0px;
-    background-image: url(images/introbg.png);
-    background-size: 100% 100%;
-    height: 92vh;
+}
+h2 {
     text-align: center;
+}
+p {
+    text-align: center;
+}
+#white {
     color: white;
 }
-
-#intro-wrap h1 {
-    margin: 20px 20px 0px 20px;
-}
-
-#intro-wrap p {
-    margin: 0px 20px 20px 20px;
-    font-size: 20px;
-}
-
-#intro-profileimg {
-    height: 200px;
-    margin: 50px 0 0 0;
-    border-radius: 100px;
-}
-
-#intro-wrap ul {
-    padding: 0px;
-    margin: 0px;
-}
-
-#intro-wrap ul li {
-    display: inline;
-}
-
-#intro-wrap ul li img {
-    padding: 10px;
-    margin: 10px 10px 0px 10px;
-    border-radius: 10px;
-    background-color: black;
-    height: 40px;
-    transition: transform 0.2s;
-}
-
-#intro-wrap ul li img:hover {
-    transform: scale(1.1);
-}
-
-/*NAVBAR SECTION*/
-
+/*Nav-bar CSS*/
 #navigation-bar ul {
     text-align: center;
     padding: 20px;
     margin: 0px;
-    background: #382636;
+    background-color: rgb(20, 20, 20);
 }
-
 #navigation-bar ul li {
     display: inline;
     margin: 0px 60px 0px 60px;
 }
-
 #navigation-bar ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.4s;
 }
-
 #navigation-bar ul li a:hover {
-    color: #EF75DF;
+    color: rgb(196, 159, 39);
 }
-
-/*CONTENT SECTION*/
-
-.content {
-    padding: 10px;
-    height: 100vh;
-}
-
-.content h1 {
-    border-bottom: 5px solid #382636;
+/*Intro CSS*/
+#intro-wrap {
+    background-image: url(images/bg_img.jpg);
+    background-size: 100% 100%;
+    height: 92vh;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
 }
-
-.content h2 {
-    text-decoration: underline;
+#name_intro {
+    padding-left: 10px;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
 }
-
-/*ABOUT ME*/
-
-#about-me img {
-    float: right;
-    height: 97vh;
-    margin: 0px 20px 0px 20px;
-    border-radius: 20px;
+#quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    background-color: black;
+    color: grey;
+    padding: 5px;
 }
-
-#about-me p {
-    text-indent: 50px;
-    font-size: 15px;
+#highlight {
+    color: rgb(196, 159, 39);
+    text-decoration: none;
 }
-
-/*FOOTER SECTION*/
-
-footer {
-    background-color: #382636;
+/*About CSS*/
+#about-me {
     text-align: center;
 }
-
-footer p {
-    padding: 10px;
-    margin: 0px;
+.about-list {
+    padding: 0px;
+    text-align: center;
+    list-style: none;
 }
-
-footer ul {
-    margin: 0px;
+.about-list li {
+    width: 250px;
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    display: inline-block;
+}
+.about-list img{
+    background-color: rgb(196, 159, 39);
+    padding: 10px;
+    border-radius: 20px;;
+    height: 50px;
+    width: auto;
+}
+.about-list h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.about-list p {
+    color: grey;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#skills li {
+    width: auto;
+}
+/*Career CSS*/
+#career p {
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+#career img {
+    display: block;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+/*Career CSS*/
+#experience-list img {
     padding: 0px;
 }
-
-footer ul li {
+/*Goals CSS*/
+#goals p {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+/*Footer CSS*/
+#footer-wrap {
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+}
+#footer-wrap ul {
+    margin: 0px;
+    padding: 10px;
+}
+#footer-wrap ul li {
     display: inline;
 }
-
-footer ul li img {
-    padding: 10px;  
-    margin: 10px 10px 5px 10px;
-    border-radius: 10px;
-    height: 40px;
-    background-color: grey;
+#footer-wrap ul li img {
+    background-color: rgb(196, 159, 39);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 20%;
     transition: transform 0.2s;
 }
-
 footer ul li img:hover {
     transform: scale(1.1);
-}
-
-/*BACK TO TOP BUTTON*/
-
-#myBtn {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    outline: none; /* Remove outline */
-    background-color: #644260; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    padding: 10px;
-}
-
-#myBtn img {
-    height: 40px;
-    padding: 0px;
 }
