@@ -22,6 +22,9 @@ p {
 #white {
     color: white;
 }
+a {
+    text-decoration: none;
+}
 /*Nav-bar CSS*/
 #navigation-bar ul {
     text-align: center;
@@ -98,6 +101,10 @@ p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+#why-me-video {
+    width: 50vw;
+    height: 240;
+}
 #skills li {
     width: auto;
 }
@@ -116,6 +123,10 @@ p {
 /*Career CSS*/
 #experience-list img {
     padding: 0px;
+}
+#projects-list {
+    text-align: center;
+    list-style: none;
 }
 /*Goals CSS*/
 #goals p {
